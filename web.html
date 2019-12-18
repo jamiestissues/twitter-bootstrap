@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>언리미티드 에디션-UE11</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script>
+
+         window.addEventListener("DOMContentLoaded", function(){
+
+        //button activation ----------------------------------
+             const active = document.getElementsByClassName("active");
+             //const inactive = document.getElementsByClassName("inactive");
+             const btn_01 = document.getElementById("btn_01");
+             const btn_02 = document.getElementById("btn_02");
+             const btn_03 = document.getElementById("btn_03");
+             const btn_04 = document.getElementById("btn_04");
+             const btn_05 = document.getElementById("btn_05");
+
+             const btns =document.getElementsByClassName("gal_btn");
+             const slide = document.getElementById("paragraph_introduce_gal_ol");
+             for(let i=0; i<btns.length; i++){
+                console.log(btns[i]);
+                let btn=btns[i];
+
+                btn.addEventListener("click", function(e){
+
+                    active[0].className = "gal_btn inactive";
+                    e.target.className = "gal_btn active";
+
+                    });
+
+
+
+
+                // console.log(btn);
+                /*i=i+1*/
+           //    for, for in, foreach, while, while in
+
+            /*    btn_01.addEventListener('click', function(){
+                  slide.style.marginLeft = "0px";});
+                btn_02.addEventListener('click', function(){
+                  slide.style.marginLeft = "-360px";});
+                btn_03.addEventListener('click', function(){
+                  slide.style.marginLeft = "-700px";});
+                btn_04.addEventListener('click', function(){
+                  slide.style.marginLeft = "-1050px";});
+                btn_05.addEventListener('click', function(){
+                  slide.style.marginLeft = "-1400px";});
+            */
+             btn.addEventListener('click', function(){
+                  slide.style.marginLeft = "-" + [i]*350 + "px";
+              });
+
+             };
+          //button activation END---------------------------------
+
+       });
+    </script>
+  </head>
+  <body>
+    <!-- wrapper_contents -->
+    <div class="contents">
+          <!-- wrapper_top_index -->
+          <div class="top_index">
+            <!-- wrapper_header_disabled -->
+            <div class="header_disabled">
+              <img src="image/bi-disable.png">
+            </div>
+            <!-- wrapper_header_disabledEND-->
+            <!-- wrapper_invitation -->
+            <div class="wrapper_invitation">
+              <div class="wrapper_invitation_text">
+                  <h3>
+                      세상의 모든 생각을 만나다.
+                  </h3>
+                  <h1>
+                      언리미티드 에디션-UE11<br>
+                      서울 아트북 페어
+                  </h1>
+                  <h4>
+                      2019.11.15 ~ 2019.11.17
+                  </h4>
+              </div>
+              <div class="banner_image">
+                  <img src="image/top_index.jpg" alt="대표이미지입니다.">
+              </div>
+            </div>
+          </div>
+          <!-- wrapper_top_index END -->
+          <!-- wrapper_title_abolute-->
+          <div class="title_absolute">
+            <h1>
+              언리미티드 에디션-UE11<br>
+              서울 아트북 페어
+            </h1>
+          </div>
+          <!-- wrapper_paragraph -->
+          <div class="paragraph">
+              <!-- wrapper_introduce -->
+              <div class="paragraph_introduce">
+                <h4>
+                  세상의 모든 생각을 만나다.
+                </h4>
+                <p>
+                  언리미티드 에디션 – 서울아트북페어(UNLIMITED EDITION –
+                  SEOUL ART BOOK FAIR)는 2009년 1회를 시작으로 매년 진행되어
+                  온 아트북페어, 독립출판의 시장입니다. 일반적인 홍보와 거리를 두는
+                  독립출판과 그 제작자들이 일년에 한 차례 각자의 목소리로 자신의 책에
+                  대해 말하고 판매하는 시간입니다. 작가/제작자와 관람자가 ‘직접 판매
+                  부스’를 통해 만나고, 프로그램과 특집을 통해 자발적으로 만들어진
+                  책들이 그해 어떤 양상으로 존재하고 있는지 조망할 수 있습니다.
+                </p>
+                <div class="paragraph_introduce_gal">
+                  <ol id="paragraph_introduce_gal_ol">
+                      <li id="img_1"><img src="image/gal_1.jpg"></li>
+                      <li id="img_2"><img src="image/gal_2.jpg"></li>
+                      <li id="img_3"><img src="image/gal_3.jpg"></li>
+                      <li id="img_4"><img src="image/gal_4.jpg"></li>
+                      <li id="img_5"><img src="image/gal_5.jpg"></li>
+                  </ol>
+                </div>
+                <div class="clear"></div>
+                <div class="paragraph_introduce_gal_button">
+                    <!--
+                    <img src="image/introduce_gal_button.jpg">
+                    -->
+                    <div>
+                      <ol>
+                        <li>
+                          <a href="#none" class="gal_btn active" id="btn_01"></a>
+                        </li>
+                        <li>
+                          <a href="#none" class="gal_btn inactive" id="btn_02"></a>
+                        </li>
+                        <li>
+                          <a href="#none" class="gal_btn inactive" id="btn_03"></a>
+                        </li>
+                        <li>
+                          <a href="#none" class="gal_btn inactive" id="btn_04"></a>
+                        </li>
+                        <li>
+                          <a href="#none" class="gal_btn inactive" id="btn_05"></a>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+              </div>
+              <!-- wrapper_introduce END-->
+              <!-- wrapper_schdule -->
+              <div class="paragraph_schedule">
+                  <div class="paragraph_schedule_head">
+                      <h6>
+                        <a href="#">방문 알리기</a>
+                      </h6>
+                    <h5>
+                      날짜
+                    </h5>
+                  </div>
+                  <div class="paragraph_schedule_box">
+                    <p>
+                      <h3>
+                        2019.11.15(금)~2019.11.18(일)
+                      </h3>
+                      <h4>
+                        금,토,일 10:00 ~ 20:00<br>
+                        월 10:00 ~ 20:00
+                      </h4>
+                    </p>
+                  </div>
+                  <div class="paragraph_schedule_note">
+                    <ul>
+                      <li>방문 알림은 작가의 밋업 스케쥴에 도움이 됩니다.</li>
+                      <li>입장 마감은 오후 아홉시 입니다.</li>
+                      <li>오프닝 리셉션은 11/15 오후 세시 입니다.</li>
+                    </ul>
+                  </div>
+                </div>
+              <!-- wrapper_schedule END -->
+              <!-- wrapper_location -->
+              <div class="paragraph_location">
+                <div class="paragraph_location_head">
+                  <h6>
+                    <a href="#">
+                    클립보드에 복사하기
+                    </a>
+                  </h6>
+                  <h5>
+                    장소
+                  </h5>
+                </div>
+                <div class="clear"></div>
+                <div class="paragraph_location_detail">
+                  <h5>
+                    서울 시립 북서울 미술관
+                  </h5>
+                  <h6>
+                    서울특별시 노원구 동일로 1238
+                  </h6>
+                  <ul>
+                    <li>평일 10:00 ~ 20:00</li>
+                    <li>주말 10:00 ~ 19:00</li>
+                    <li>공휴일 10:00 ~ 19:00</li>
+                  <ul>
+                </div>
+                <div class="paragraph_location_map googleapi">
+                    <img src="image/map.jpg">
+                </div>
+                <div class="paragraph_location_gal">
+                  <img src="image/map_1.jpg">
+                  <img src="image/map_2.jpg">
+                  <img src="image/map_3.jpg">
+                </div>
+                <div class="paragraph_location_gal_button">
+                  <ol>
+                    <li>
+                     <li><a href="#" class="location_gal_btn active"></a></li>
+                     <li><a href="#" class="location_gal_btn"></a></li>
+                     <li><a href="#" class="location_gal_btn"></a></li>
+                  </ol>
+                </div>
+                <div class="paragraph_location_share">
+                    <ol>
+                      <li>
+                        <div class="btn_image_map">
+                          <img src="image/icon_map_1.png">
+                        </div>
+                        <div class="btn_image_map_label">
+                        카카오 맵
+                        </div>
+                      </li>
+                      <li>
+                        <div class="btn_image_map">
+                        <img src="image/icon_map_2.png">
+                        </div>
+                        <div class="btn_image_map_label">
+                        구글 맵
+                        </div>
+                      </li>
+                      <li>
+                        <div class="btn_image_map">
+                          <img src="image/icon_map_3.png">
+                        </div>
+                        <div class="btn_image_map_label">
+                          네이버 지도
+                        </div>
+                      </li>
+                    </ol>
+                </div>
+            </div>
+              <!-- wrapper_location END -->
+              <!-- wrapper_artist -->
+              <div class="paragraph_artist">
+                  <div class="paragraph_artist_head">
+                      <h5>
+                       작가
+                      </h5>
+                  </div>
+                  <div class="paragraph_artist_list">
+                      <ol>
+                          <li><a href="#">포스트 옐로우</a></li>
+                          <li><a href="#">스튜디오 양장점</a></li>
+                          <li><a href="#">서영지</a></li>
+                          <li><a href="#">알바알토</a></li>
+                          <li><a href="#">이우환</a></li>
+                          <li><a href="#">김환기</a></li>
+                      </ol>
+                  </div>
+                  <div class="paragraph_artist_detail">
+                      <h5>
+                      스튜디오 양장점
+                      </h5>
+                      <h6>
+                      활자가 만들어지는 과정에서 사용되는 그리드를 하나의 공간으로
+                      바라본다면 그 안에서 만들어지는 활자도 평면이 아닌 입체적 형태가
+                      된다는 관점에서 이 작업은 시작되었다.
+                      </h6>
+                      <div class="paragraph_artist_detail_sns">
+                          <ol>
+                              <li><a href="//www.instagram.com/" target="_blank"> instagram @123012</a></li>
+                              <li><a href="mailto:fiijlfiijl@gmail.com"> mail 232342352@gmail.com</a></li>
+                          </ol>
+                      </div>
+                      <div class="paragraph_artist_detail_image">
+                          <ol>
+                              <li><img src="image/artist_gal_1.jpg"></li>
+                              <li><img src="image/artist_gal_2.jpg"></li>
+                              <li><img src="image/artist_gal_3.jpg"></li>
+                              <li><img src="image/artist_gal_4.jpg"></li>
+                          <ol>
+                      </div>
+                  </div>
+              </div>
+              <!-- wrapper_artist END -->
+              <!-- wrapper_invitation -->
+              <div class="paragraph_invitation">
+                  <ol>
+                      <li>
+                          <div class="paragraph_invitation_message">
+                              <p>
+                                이 초대장은<br>
+                                <strong>전시 참여작가, 신재민</strong>님
+                                으로부터 발송되었습니다.
+                                입장권 QR코드를 확인하세요.
+                              </p>
+                          </div>
+                          <div class="paragraph_invitation_sign">
+                              <p>
+                                Signature
+                              </p>
+                          </div>
+                          <div class="paragraph_invitation_sign_image">
+                              <img src="image/sign.png">
+                          </div>
+                          <div class="paragraph_invitation_paper">
+                              <img src="image/paper_bkg.png">
+                          </div>
+                      </li>
+                      <li>
+                         <div class="paragraph_invitation_qr">
+                             <a href="#"><img src="image/qr.png"></a>
+                             <p>
+                                 <a href ="#">확대하기</a>
+                             </p>
+                         </div>
+                         <div class="paragraph_invitation_paper">
+                             <img src="image/paper_bkg.png">
+                         </div>
+                      </li>
+                   </ol>
+              </div>
+              <!-- wrapper_invitation END -->
+          </div>
+          <!-- paragraph END -->
+      </div>
+  <!-- wrapper_contents END-->
+  </body>
+</html>
